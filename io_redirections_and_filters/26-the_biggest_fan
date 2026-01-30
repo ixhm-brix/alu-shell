@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -exec printf '%f\n' {} \;
+tail -n +2 | cut -f1 | sort | uniq -c | sort -rn | head -11 | tr -s ' ' | cut -d' ' -f3
