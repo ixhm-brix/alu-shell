@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Script that tells the story of /etc/passwd
 
 while IFS=':' read -r username password uid gid info home shell
