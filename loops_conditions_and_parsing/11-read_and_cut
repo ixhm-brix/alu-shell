@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script displays specific fields from /etc/pwd
+
+while IFS=':' read -r line; do
+    # Extract fields using cut
+    username=$(echo "$line" | cut -d: -f1)
+    userid=$(echo "$line" | cut -d: -f3)
+    homedir=$(echo "$line" | cut -d: -f6)
+    
+    # Display in format: username:userid:homedir
+    echo "$username:$userid:$homedir"
+done < /etc/passwd
