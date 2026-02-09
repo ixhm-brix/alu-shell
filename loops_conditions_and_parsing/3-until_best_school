@@ -1,0 +1,5 @@
+counter=1
+until [ $counter -gt 10 ]; do
+    echo "Best School"
+    counter=$((counter + 1))
+done
