@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# This script displays lines containing "bash" to show Bash process PIDs
 ps -eo pid,comm
